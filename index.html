@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join My Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('pixel.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden; /* Prevent body scrolling on mobile */
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(13, 69, 13, 0.14); /* Semi-transparent black overlay */
+            z-index: 1;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px; /* Smaller width for mobile */
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for the glass-like effect */
+            z-index: 2;
+            position: relative;
+            text-align: center;
+            overflow-y: auto; /* Add scrollbar if content overflows */
+            max-height: 80vh; /* Limit container height to 80vh to prevent it from being too large on mobile */
+        }
+        h1 {
+            color: #fff;
+            font-family: 'Lucida Handwriting', cursive;
+            margin-top: 0;
+        }
+        .description {
+            color: #fff;
+            margin-top: 20px;
+        }
+        .server-info {
+            margin-top: 20px;
+            color: #fff;
+            border: 1px solid green; /* Add border around the server info */
+            padding: 10px; /* Add padding for better spacing */
+            border-radius: 5px; /* Add border radius for better appearance */
+        }
+        .server-name {
+            font-weight: bold;
+        }
+        .ip {
+            font-style: italic;
+        }
+
+        /* Media Query for smaller screens (mobile) */
+        @media screen and (max-width: 600px) {
+            .container {
+                max-width: 300px; /* Adjusted width for smaller screens */
+                top: 50%; /* Position the container in the middle vertically */
+                transform: translateY(-50%); /* Adjust for vertical centering */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Join My Server</h1>
+        <hr>
+        <br>
+        <p class="description">Join My Minecraft Bedrock Server With the IP Below : </p>
+        <br>
+        <br>
+        <div class="server-info">
+            <div class="ip" style="color: green;">fawinz.aternos.me</div>
+            <br>
+            <div class="ip" style="color: yellow;">23718</div>
+        </div>
+    </div>
+</body>
+</html>
+
